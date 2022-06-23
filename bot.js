@@ -48,7 +48,7 @@ function setUpBot() {
   bot.onText(/\/витя/, (msg) => {
     let num = Math.round(Math.random()),
       text = num == 1 ? 'Витя пидор' : 'Витя не пидор';
-    bot.sendMessage(msg.chat.id, text + ' ' + num).then(() => {
+    bot.sendMessage(msg.chat.id, text).then(() => {
       // reply sent!
     });
   })
